@@ -2,13 +2,15 @@ import './Projects.css'
 
 export default function Projects() {
   const projects = [
-   
+
     {
       id: 1,
-      title: 'Portfolio Website',
-      description: 'A modern portfolio website showcasing my projects and skills with responsive design.',
+      title: 'Aakash Raje | Portfolio',
+      description: 'Explore my personal portfolio showcasing my web development projects, skills, and experience. Built with React, JavaScript, and Tailwind CSS with a responsive design for all devices.',
       tech: ['React', 'JavaScript', 'Tailwind CSS'],
-      featured: true
+      featured: true,
+      liveLink: 'https://aakash-raje.vercel.app/',
+      githubLink: 'https://github.com/rejakash13/aakash-raje'
     }
   ]
 
@@ -28,8 +30,8 @@ export default function Projects() {
                 ))}
               </div>
               <div className="project-links">
-                <button className="project-link">📱 Live Demo</button>
-                <button className="project-github">🐙 GitHub</button>
+                <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="project-link">📱 Live Demo</a>
+                <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="project-github">🐙 GitHub</a>
               </div>
             </div>
           ))}
