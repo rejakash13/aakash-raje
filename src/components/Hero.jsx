@@ -52,7 +52,6 @@ export default function Hero() {
             <img src="/aakash11.png" alt="Aakash Raje" className="avatar" />
           </div>
           </div>
-          <div className="scroll-indicator">⬇</div>
           </div>
           </section>
           )
